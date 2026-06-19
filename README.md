@@ -10,7 +10,7 @@ Each city card shows:
 - The country code and city name
 - The current local time in that city
 - The UTC offset
-- A dot indicator — yellow for daytime, indigo for nighttime
+- A dot indicator yellow for daytime, indigo for nighttime
 
 The clock also detects the current date and shows a greeting or holiday label such as Good Morning, Good Evening, or a holiday name if today matches a known date.
 ## Cities Included
