@@ -155,7 +155,7 @@ export default function App() {
         </p>
 
         <p className="mt-3 text-[0.56rem] tracking-[0.30em] uppercase text-purple-200/28">
-          Codiarc Digital Clock
+          Hosea James Zacarias Clock
         </p>
       </div>
 
