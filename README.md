@@ -1,16 +1,18 @@
-# React + Vite
+# Digital Clock
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A real-time digital clock built with React and Vite that displays your local time alongside live world clocks from 9 major cities.
 
-Currently, two official plugins are available:
+## How It Works
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The app uses React's `useState` and `useEffect` hooks to update the time every second using `setInterval`. The local time is displayed at the top, and 9 world city clocks are shown in a grid below using the browser's built-in `Intl.DateTimeFormat` API to convert time zones accurately.
 
-## React Compiler
+Each city card shows:
+- The country code and city name
+- The current local time in that city
+- The UTC offset
+- A dot indicator — yellow for daytime, indigo for nighttime
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The clock also detects the current date and shows a greeting or holiday label such as Good Morning, Good Evening, or a holiday name if today matches a known date.
+## Cities Included
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+New York, London, Paris, Dubai, Tokyo, Sydney, Singapore, Manila, São Paulo
